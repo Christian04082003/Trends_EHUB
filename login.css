@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inknut Antiqua', serif;
+}
+
+header {
+  background-color: rgba(0, 85, 176, 0.63);
+  color: white;
+  display: flex;
+  align-items: center; 
+  letter-spacing: 1.5px;
+  position: fixed; 
+  margin-top: 20px;
+  width: 100%;
+}
+
+.adnu {
+  margin-left: 30px;
+  font-size: 15px;
+}
+
+.exchange-hub {
+  font-size: 20px;
+  margin-left: 39%;
+}
+
+.BG {
+  background-position: center;
+  background-attachment: fixed; 
+  justify-content: center;
+  width: 100vw;
+  height: 100vh; 
+  display: flex;
+  align-items: center;
+  background-size: cover; 
+}
+
+.container {
+  background-color: rgba(240, 255, 255, 0.836);
+  background-attachment: fixed;
+  height: 60vh;
+  width: 50vw;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center; 
+  margin-bottom: 20px;
+}
+
+.input-wrapper i {
+  position: absolute;
+  left: 10px;  
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 15px;
+}
+
+.input input {
+  border-radius: 5px;
+  border: solid 1px black;
+  padding-left: 40px; 
+  font-size: 15px;
+  font-weight: 300;
+  height: 45px;
+  width: 25rem;
+}
+
+.logo {
+  height: 20vh;
+  width: 10vw;
+  margin-bottom: 20px; 
+}
+
+.google{
+  border-radius: 50px;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  margin-top: 27.5rem;
+  margin-right: 14rem;
+}
+
+.login {
+  background-color: blue;
+  color: white;
+  border-radius: 20px;
+  width: 13rem;
+  cursor: pointer;
+  text-align: center; 
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.forgetpass {
+  font-size: medium;
+  font-size: 14px;
+  align-items: center;
+}
+
+#splash-screen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.sign-up {
+  color: white;
+  background-color: blue;
+  border-radius: 50px;
+  width: 18rem;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 15px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#main-content {
+  display: none;
+  opacity: 0;
+  animation: fadeInContent 1s ease-out forwards; 
+}
+
+@keyframes fadeInContent {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
